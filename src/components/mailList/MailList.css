@@ -1,0 +1,44 @@
+.mailinputcont > button {
+  background: #41295a;
+  background: linear-gradient(to right, #2f0743, #41295a);
+  color: white;
+  font-size: 20px;
+  border: none;
+  height: 50px;
+  padding: 10px;
+
+  transition: all 0.3s ease-in;
+  animation: clr 1s infinite;
+}
+
+.mailinputcont > button:hover {
+  box-shadow: 3px 3px black;
+  cursor: pointer;
+}
+
+.mail {
+  font-family: sans-serif;
+  width: 100%;
+  margin-top: 50px;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #543a70;
+  color: aliceblue;
+  display: flex;
+  max-width: 1024px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+.mailinputcont > input {
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  transition: all 0.3s ease-in;
+}
+.mailinputcont > input:focus {
+  box-shadow: 3px 3px black;
+}

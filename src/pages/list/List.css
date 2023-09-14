@@ -1,0 +1,121 @@
+.listcon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.listwrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listsearch {
+  flex: 1;
+  /* background-color: burlywood; */
+
+  background-color: #c0abd6; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+}
+.lstitle {
+  font-size: 20px;
+  font-family: sans-serif;
+  /* 
+  color: #555; */
+  color: #2f0743;
+  margin-bottom: 10px;
+}
+.lsitem > label {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #fffdfd;
+}
+.lsitem > input {
+  height: 30px;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.lsitem > datespan {
+  background-color: #fffdfd;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.lsitem > span {
+  background-color: #fffdfd;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.listresult {
+  flex: 3;
+}
+.lsitem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  /* overflow: hidden; */
+}
+.lsoptionitem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 16px;
+}
+.lsoptiontext {
+  font-family: sans-serif;
+
+  color: rgb(0, 0, 0);
+}
+.lsoptiontext > small {
+  color: gray;
+}
+.lsitemlb {
+  margin-bottom: 20px;
+}
+.lsoptioninput {
+  width: 50px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.lsearch {
+  font-weight: 500;
+  font-family: "Archivo", sans-serif;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2f0743,
+    #41295a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2f0743, #41295a);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  width: 100%;
+}

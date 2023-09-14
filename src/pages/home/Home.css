@@ -1,0 +1,24 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  gap: 30px;
+}
+.hometitle {
+  width: 1024px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+.light {
+  filter: brightness(0.8);
+  transition: all 0.5s ease-in-out;
+}
+.dark {
+  filter: brightness(0.6);
+  transition: all 0.5s ease-in-out;
+}

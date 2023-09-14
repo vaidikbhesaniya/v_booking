@@ -1,0 +1,39 @@
+.featured {
+  width: 100%;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 70px;
+  justify-content: space-between;
+  gap: 20px;
+  /* z-index: -1; */
+  -webkit-filter: blur(2px);
+  transition: all 0.2s ease-in;
+}
+
+.featured.rmv {
+  -webkit-filter: blur(0px);
+}
+.featureditem {
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 250px;
+}
+.featuredim {
+  width: 100%;
+  object-fit: cover;
+}
+.featuredtitles {
+  position: absolute;
+  top: 20px;
+  font-family: sans-serif;
+  color: #543a70;
+  left: 10px;
+  font-size: 15px;
+}
+.featuredim:hover {
+  box-shadow: 3px 3px black;
+}

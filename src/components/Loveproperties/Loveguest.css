@@ -1,0 +1,36 @@
+.fp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1024px;
+}
+.fpitem {
+  /* flex: 1; */
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.fpimg {
+  width: 100%;
+}
+.fpname {
+  font-size: 15px;
+  font-weight: 800;
+}
+.fprating {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 20px;
+  align-items: center;
+}
+.fprating > button {
+  border: none;
+  background-color: rgb(25, 0, 255);
+  padding: 5px;
+  border-radius: 10px;
+  color: beige;
+}
