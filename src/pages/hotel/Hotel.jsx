@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../components/footer/Footer";
 import MailList from "../../components/mailList/MailList";
+import useFetch from "../../hooks/useFetch";
 const Hotel = () => {
   const [on, seton] = useState(false);
   const [index, setindex] = useState(0);
@@ -23,6 +24,10 @@ const Hotel = () => {
     setopen(() => true);
     setindex(i);
   };
+
+  // const { data, loading, error, reFetch } = useFetch(
+  //   `http://localhost:8000/hotels/find/}`
+  // );
   const photos = [
     {
       src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/334195759.jpg?k=cd98c4b6ef6a3de760e1dbe37113e5a2c7502f3131996e15c8482a99ce0e19be&o=&hp=1",

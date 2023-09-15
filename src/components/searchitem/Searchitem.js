@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Searchitem.css";
-const Searchitem = () => {
+const Searchitem = ({ item }) => {
   const [on, seton] = useState(false);
 
   useEffect(() => {
@@ -12,14 +13,10 @@ const Searchitem = () => {
 
   return (
     <div className="SearchItem">
-      <img
-        className="siimg"
-        src="https://cf.bstatic.com/xdata/images/hotel/square200/334195759.webp?k=1fdb140815c670982f43d23ebc9951b25264724547c604358caabadb092c1384&o="
-        alt=""
-      />
+      <img className="siimg" src={item.photos[0]} alt="" />
       <div className="sidesc">
-        <h1 className="sititle">Tower street apartment</h1>
-        <span className="sidistance">500m from center</span>
+        <h1 className="sititle">{item.name}</h1>
+        <span className="sidistance">{item.distancce}m from center</span>
         <span className="sitexiop">Free airport taxi</span>
         <span className="sisubtitle">
           Studio Apartment with air conditioningg
@@ -49,10 +46,13 @@ const Searchitem = () => {
 
           <div className="detailtext">
             <span className="siprice">
-              <i class="fa-solid fa-dollar-sign fa-shake"></i>1122
+              <i class="fa-solid fa-dollar-sign fa-shake"></i>
+              {item.chepestprice}
             </span>
             <span className="sitaxop">Inludes taxes and fees</span>
-            <button className="sicheckbtn">See availability</button>
+            <Link to={`/hotels/api/${item._id}`}>
+              <button className="sicheckbtn">See availability</button>
+            </Link>
           </div>
         </div>
       </div>

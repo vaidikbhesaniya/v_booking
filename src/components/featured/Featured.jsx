@@ -7,18 +7,14 @@ const Featured = () => {
     "http://localhost:8000/hotels/countBycity?cities=london,surat,ahmedabad"
   );
 
-  console.log(data);
-  const [rmv, setrmv] = useState(false);
+  // console.log(data);
+  // const [rmv, setrmv] = useState(false);
   return (
     <>
       {loading ? (
         <div className="loading">{/* <h1>LOADING..... please wait</h1> */}</div>
       ) : (
-        <div
-          className={rmv ? "featured rmv" : "featured "}
-          onMouseEnter={() => setrmv(() => true)}
-          onMouseLeave={() => setrmv(() => false)}
-        >
+        <div className="featured">
           <div className="featureditem">
             <img
               src="https://cf.bstatic.com/xdata/images/city/600x600/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o="

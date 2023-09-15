@@ -7,13 +7,13 @@
   justify-content: space-between;
   gap: 20px;
   /* z-index: -1; */
-  -webkit-filter: blur(2px);
+  /* -webkit-filter: blur(2px); */
   transition: all 0.2s ease-in;
 }
 .loading {
-  background: #000000
-    url("https://media.tenor.com/XasjKGMk_wAAAAAC/load-loading.gif") center
-    no-repeat;
+  background: #ffffff
+    url("https://cdn.dribbble.com/users/839429/screenshots/4519779/plane-travel-icon-rebound2.gif")
+    center no-repeat;
 
   position: fixed;
   left: 0;
@@ -26,9 +26,7 @@
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
-.featured.rmv {
-  -webkit-filter: blur(0px);
-}
+
 .featureditem {
   position: relative;
   color: white;

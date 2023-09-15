@@ -41,3 +41,6 @@
 .ftext > span {
   color: black;
 }
+.ftext > span > b {
+  cursor: pointer;
+}

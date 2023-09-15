@@ -68,7 +68,10 @@ const Footer = () => {
       <div className="ftext">
         Copyright © 1996–2023 V-Bookinsg.com™. All rights reserved. Cloned by
         <span>
-          <b> @vaidik bhesaniya</b>
+          <b>
+            {" "}
+            <a href="https://github.com/vaidikbhesaniya"> @vaidik bhesaniya</a>
+          </b>
         </span>
       </div>
     </div>
