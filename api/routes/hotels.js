@@ -7,6 +7,8 @@ import {
   gethotel,
   deletehotel,
   updatehotel,
+  countBycity,
+  countBytype,
 } from "../controllers/hotel.js";
 import { verifyadmin } from "../utils/verifytokens.js";
 
@@ -17,10 +19,15 @@ router.post("/", verifyadmin, cretehotel);
 router.get("/", getallhotel);
 
 //get perticular hotel
-router.get("/:id", gethotel);
+router.get("/find/:id", gethotel);
+
+router.get("/countBycity", countBycity);
+router.get("/countBytype", countBytype);
+
 //update
-router.put("/:id", verifyadmin, updatehotel);
+
+router.put("/find/:id", verifyadmin, updatehotel);
 
 //delete
-router.delete("/:id", verifyadmin, deletehotel);
+router.delete("/find/:id", verifyadmin, deletehotel);
 export default router;

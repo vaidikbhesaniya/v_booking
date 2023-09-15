@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import cors from "cors";
 const app = express();
 import mongoose from "mongoose";
 import dotenv from "dotenv";
@@ -8,8 +9,9 @@ import roomsRoute from "./routes/rooms.js";
 import usersRoute from "./routes/users.js";
 import hotelRoute from "./routes/hotels.js";
 import cookieParser from "cookie-parser";
-dotenv.config();
 
+dotenv.config();
+app.use(cors());
 const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO);
