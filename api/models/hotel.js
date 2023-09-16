@@ -56,6 +56,16 @@ const hotelschema = new mongoose.Schema({
   featured: {
     type: Boolean,
   },
+
+  imagegalary: {
+    type: [
+      {
+        src: {
+          type: String,
+        },
+      },
+    ],
+  },
 });
 
 export default mongoose.model("Hotel", hotelschema);
